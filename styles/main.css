@@ -3,13 +3,31 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  height: 100vh;
   background: url("../images/huellas-bg.jpg") center no-repeat;
   color: #444422;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.5;
   text-align: center;
+}
+
+header {
+  top: 0%;
+  height: 15%;
+  width: 100%;
+
+  background: #444422;
+  color: #eeeedd;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0.5em 2em;
+}
+
+main {
+  max-height: 50vh;
+  margin-bottom: 1em;
 }
 
 .card {
@@ -21,12 +39,14 @@ body {
 }
 
 img {
-  margin: 2em;
+  max-width: 400px;
+  max-height: 250px;
+  margin: 0.5em;
 }
 
 h2 {
   margin: 0;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .btn {
@@ -47,7 +67,25 @@ h2 {
   color: #eeeedd;
 }
 
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+
+  background: #444422;
+  color: #eeeedd;
+}
+
+footer-wrap {
+  padding: 2em 1em;
+}
+
 footer a {
   text-decoration: none;
   color: #111109;
+}
+
+footer a:hover {
+  color: #eeeedd;
 }
