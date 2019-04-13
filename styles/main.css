@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 
+  height: 100vh;
   background: url("../images/huellas-bg.jpg") center no-repeat;
   color: #444422;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,4 +27,27 @@ img {
 h2 {
   margin: 0;
   padding: 1em;
+}
+
+.btn {
+  display: inline-block;
+
+  background: #eeeedd;
+  color: #444422;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #444422;
+  margin: 0.5em 0;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #444422;
+  color: #eeeedd;
+}
+
+footer a {
+  text-decoration: none;
+  color: #111109;
 }
