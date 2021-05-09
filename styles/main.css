@@ -3,7 +3,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  background: url("../images/huellas-bg.jpg") center no-repeat;
+  background: url("../images/huellas-bg.jpg") center center no-repeat;
+  background-size: cover;
   color: #444422;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -12,8 +13,7 @@ body {
 }
 
 header {
-  top: 0%;
-  height: 15%;
+  height: 10vh;
   width: 100%;
 
   background: #444422;
@@ -26,22 +26,35 @@ header h1 {
 }
 
 main {
-  max-height: 50vh;
+  height: 82vh;
   margin-bottom: 1em;
+  position: relative;
+}
+
+.container {
+  margin: 3rem auto;
+  width: 1024px;
+  min-height: 600px;
+  height: auto;
+
+  position: relative;
 }
 
 .card {
-  display: block;
-  width: 50%;
-  height: 40%;
-  position: relative;
-  left: 25%;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 img {
-  max-width: 400px;
-  max-height: 250px;
-  margin: 0.5em;
+  max-height: 350px;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  margin: 2rem auto;
+  border-radius: 10px;
 }
 
 h2 {
@@ -50,16 +63,16 @@ h2 {
 }
 
 .btn {
-  display: inline-block;
-
   background: #eeeedd;
   color: #444422;
   font-size: 14px;
   text-decoration: none;
   padding: 1em 2em;
-  border: 1px solid #444422;
-  margin: 0.5em 0;
-  border-radius: 5px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .btn:hover {
@@ -67,10 +80,15 @@ h2 {
   color: #eeeedd;
 }
 
+.btn:focus {
+  outline: none;
+  border: none;
+}
+
 footer {
   position: fixed;
   bottom: 0px;
-  height: 50px;
+  height: 8vh;
   width: 100%;
 
   background: #444422;
